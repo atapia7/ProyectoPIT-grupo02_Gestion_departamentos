@@ -37,6 +37,20 @@
 
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
+    <!-- jquery.vectormap css -->
+<link href="Content/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+<link href="Content/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Responsive datatable examples -->
+<link href="Content/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <!-- Responsive datatable examples -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <script src="https://cdn.themesinfo.com/detector.js"></script>
+
  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <style type="text/css">
@@ -71,7 +85,7 @@
     
     <nav class="navbar navbar-static-top">
      
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" ; >
         <span class="sr-only"></span>
       </a>
 
@@ -267,7 +281,7 @@
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
+    <section class="sidebar"  style="height: auto ; position:fixed; ">
       <!-- Sidebar user panel -->
       <div class="auto-style6">
         
@@ -305,6 +319,22 @@
           </ul>
         </li>
 
+
+                    <li class="treeview">
+          <a href="#">
+            <i class="fa fa-edit"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="Web_Menu_Principal.aspx"><i class="fa fa-circle-o"> Dashboard Principal</i></a></li>
+           
+            
+
+
+          </ul>
+        </li>
 
 
             <li class="treeview">
@@ -611,71 +641,494 @@
 
 
 
-                     <center>
+ <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
 
-                        <table class="nav-justified">
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>
-                                  
-                     <center>  <asp:Image ID="Image1" runat="server" Height="400px" ImageUrl="~/ICONOS/fondo.jpg" Width="850px" />
-                     </center>
-                                </td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>
-                                    <table class="nav-justified">
-                                        <tr>
-                                            <td class="auto-style7">&nbsp;</td>
-                                            <td>&nbsp;</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="auto-style7">&nbsp;</td>
-                                            <td>
-                                                <asp:Label ID="Label1" runat="server" Font-Bold="True" style="font-size: x-large; font-family: Arial" Text="Control de Visitante"></asp:Label>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                        </table>
+            <!-- Main Content -->
+            <div id="content">
+
+                
+                    <!-- Topbar -->
 
 
+                        <!-- Counter - Messages -->
+                        <!-- Dropdown - Messages -->
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                            <h6 class="dropdown-header">
+                                Message Center
+                            </h6>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                </div>
+                                <div class="font-weight-bold">
+                                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                                    <div class="status-indicator"></div>
+                                </div>
+                                <div>
+                                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                                    <div class="status-indicator bg-warning"></div>
+                                </div>
+                                <div>
+                                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="dropdown-list-image mr-3">
+                                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                </div>
+                                <div>
+                                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                        </div>
 
-                     </center>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                       
 
 
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+                <!-- Begin Page Content -->
+                <div class="container-fluid ">
+
+                    <!-- Page Heading -->
 
 
+                    <!-- Content Row -->
+                    <div class="row">
 
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Propietarios</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1"> Boletas</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Pago de Servicios</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Actividades</div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">100% la experiencia de la administracion </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Atencion al Cliente - Soporte</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">471-4578</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+
+                    <div class="row">
+
+                        <!-- Area Chart -->
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Nosotros</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+
+                                        <img src="img/clinica.jpg" width="1000" height="320">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pie Chart -->
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Pago de Servicios</h6>
+                                    <div class="dropdown no-arrow">
+
+                                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    
+                                    <div class="mt-4 text-center small">
+
+                                        <img src="img/fuente.jpg">
+                                        <p> Pagados (Azul) , Pendientes (Verde ) , Morosos(Verde claro) </p>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Content Column -->
+                        <div class="col-lg-6 mb-4">
+
+                            <!-- Project Card Example -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">HISTORIA DEL CONDOMINIO</h6>
+                                </div>
+
+                            </div>
+
+                            <!-- Color System -->
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-primary text-white shadow">
+                                        <div class="card-body">
+                                            2015: Nuestro condominio es una empresa familiar experta en el sector inmobiliario y urbano, que ofrece un amplio portafolio de servicios a través de un trato personalizado a cada uno de nuestros clientes.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-success text-white shadow">
+                                        <div class="card-body">
+                                            2016:  Gracias a la calidad humana y el profesionalismo de nuestro equipo de trabajo, le brindamos a nuestros clientes una asesoría integral basada en la honestidad, compromiso y seguridad.
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-info text-white shadow">
+                                        <div class="card-body">
+                                            2017: Culminación de la construcción de la segunda etapa que va del segundo al noveno piso.
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-warning text-white shadow">
+                                        <div class="card-body">
+                                            2018: El 20 de febrero se inaugura nuestro condominio
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-danger text-white shadow">
+                                        <div class="card-body">
+                                            El 22 de diciembre de 2019, en ceremonia pública, se abren de manera oficial las puertas del Condominio
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-secondary text-white shadow">
+                                        <div class="card-body">
+                                            2020 : Se inaguran nuevos espacios comunes y GYM con equipos traidos desde China
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-light text-black shadow">
+                                        <div class="card-body">
+                                            2021: Se amplia con un edificio aledaño de 9 pisos
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-dark text-white shadow">
+                                        <div class="card-body">
+                                            2022:Culminacion de obras y se abren las puertas al publico
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">NUESTRA MISIÓN</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img src="img/mision.jpg" alt="">
+                                    </div>
+                                    <p>Nuestro condominio es una institución que tiene como misión brindar una atención de calidad diferenciada, con trato humanista, responsable; ofreciendo una infraestructura moderna con tecnología de avanzada.</p>
+
+                                </div>
+                            </div>
+
+                            <!-- Approach -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">NUESTRA VISIÓN</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img src="img/VISION.jpg">
+                                    </div>
+                                    <p>Nuestro condominio buscará ser una institución modelo en servicios de Efificios, con clientes satisfechos por la atención ofrecida con calidad y calidez, constituyéndose así en un buen referente entre el sector.</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    <!-- End of Page Wrapper -->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+        <div class="card">
+            <div class="card-body">
+   
+                <h4 class="card-title mb-4">Reportes de Pago de Servicios</h4>
+                <div>
+                    <div id="line-column-chart" class="apex-charts" dir="ltr"></div>
+                </div>
+            </div>
+
+            <div class="card-body border-top text-center">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="d-inline-flex">
+                            <h5 class="me-2">13 Pagos puntuales</h5>
+                            <div class="text-success">
+                                <i class="mdi mdi-menu-up font-size-14"> </i>2.2 %
+                            </div>
+                        </div>
+                        <p class="text-muted text-truncate mb-0">Este Mes</p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="mt-4 mt-sm-0">
+                            <p class="mb-2 text-muted text-truncate"><i class="mdi mdi-circle text-primary font-size-10 me-1"></i> Este Año :</p>
+                            <div class="d-inline-flex">
+                                <h5 class="mb-0 me-2">50 Pagos puntuales</h5>
+                                <div class="text-success">
+                                    <i class="mdi mdi-menu-up font-size-14"> </i>2.1 %
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="mt-4 mt-sm-0">
+                            <p class="mb-2 text-muted text-truncate"><i class="mdi mdi-circle text-success font-size-10 me-1"></i> Año Pasado :</p>
+                            <div class="d-inline-flex">
+                                <h5 class="mb-0">60 Pagos puntuales</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="float-end">
+                    <select class="form-select form-select-sm">
+                        <option selected>Abril</option>
+                        <option value="1">Marzo</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Enero</option>
+                    </select>
+                </div>
+                <h4 class="card-title mb-4">Analisis de Incidentes</h4>
+
+                <div id="donut-chart" class="apex-charts"></div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="text-center mt-4">
+                            <p class="mb-2 text-truncate"><i class="mdi mdi-circle text-primary font-size-10 me-1"></i> Ruido</p>
+                            <h5>42 %</h5>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center mt-4">
+                            <p class="mb-2 text-truncate"><i class="mdi mdi-circle text-success font-size-10 me-1"></i> Filtraciones</p>
+                            <h5>26 %</h5>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center mt-4">
+                            <p class="mb-2 text-truncate"><i class="mdi mdi-circle text-warning font-size-10 me-1"></i> Abusos</p>
+                            <h5>42 %</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+                <h4 class="card-title mb-4">Reporte de Ganancias</h4>
+                <div class="text-center">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div>
+                                <div class="mb-3">
+                                    <div id="radialchart-1" class="apex-charts"></div>
+                                </div>
+
+                                <p class="text-muted text-truncate mb-2">Ganancias semanales</p>
+                                <h5 class="mb-0">S/.2,523</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="mt-5 mt-sm-0">
+                                <div class="mb-3">
+                                    <div id="radialchart-2" class="apex-charts"></div>
+                                </div>
+
+                                <p class="text-muted text-truncate mb-2">Ganancias mensuales</p>
+                                <h5 class="mb-0">S/.11,235</h5>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Sitio Web Carlos Cardenas - Jamber Torres - Jamir Angulo - Michael Tapia( CIBERTEC) </span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
                   
                  
 
 
 <div class="form-group">
-                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; </label>
 
-                 &nbsp;</div>
                 <!-- /.input group -->
               </div>
               <!-- /.form group -->
@@ -692,29 +1145,7 @@
           <!-- /.row -->
         </div>
 
-<div class="box-footer">
 
-                &nbsp;  </button>
-              </div>
-<br><br>
-             
-   
-             
-              <br>
-         
-          <br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-
-        <!-- /.box-body -->
-       
-      <!-- /.box -->
 
    
             
@@ -944,6 +1375,67 @@
             document.head.appendChild(t);
         });
     </script>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="Content/libs/jquery/jquery.min.js"></script>
+    <script src="Content/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="Content/libs/jquery.easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="css/sb-admin-2.min.css"></script>
+
+    <!-- Page level plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end row -->
+<!-- JAVASCRIPT -->
+<script src="Content/libs/jquery/jquery.min.js"></script>
+<script src="Content/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="Content/libs/metismenu/metisMenu.min.js"></script>
+<script src="Content/libs/simplebar/simplebar.min.js"></script>
+<script src="Content/libs/node-waves/waves.min.js"></script>
+
+
+<!-- apexcharts -->
+<script src="Content/libs/apexcharts/apexcharts.min.js"></script>
+
+<!-- jquery.vectormap map -->
+<script src="Content/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="Content/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js"></script>
+
+<!-- Required datatable js -->
+<script src="Content/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="Content/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+
+<!-- Responsive examples -->
+<script src="Content/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="Content/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+<script src="js/pages/dashboard.init.js"></script>
+
+<!-- App js -->
+<script src="js/app.js"></script>
 <!-- jQuery 3 -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
