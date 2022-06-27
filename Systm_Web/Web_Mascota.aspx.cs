@@ -23,15 +23,9 @@ namespace Systm_Web
             {
 
 
-                propietario();
-
-
-
-              
+                propietario();              
                     txtfecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
-
-
-             
+                  
 
 
 

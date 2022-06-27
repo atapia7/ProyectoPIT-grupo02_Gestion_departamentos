@@ -35,9 +35,6 @@
         .auto-style8 {
             width: 249px;
         }
-        .auto-style9 {
-            width: 11px;
-        }
         .auto-style10 {
             width: 40px;
         }
@@ -72,12 +69,11 @@
                 </td>
             </tr>
                 <td class="auto-style11">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style6">
-                    <asp:Panel ID="Panel2" runat="server" Height="250px" style="background-color: #66CCFF" Width="337px">
+                    <asp:Panel ID="Panel2" runat="server" Height="250px" style="background-color: #66CCFF; margin-left: 0px;" Width="337px">
                         <table class="nav-justified">
                             <tr>
-                                <td class="auto-style9">&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td class="auto-style10">&nbsp;</td>
                                 <td class="auto-style8">
                                     <h3>&nbsp;Accede a tu cuenta 🔐 </h3>
@@ -85,7 +81,7 @@
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td class="auto-style9">&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td class="auto-style10">&nbsp;</td>
                                 <td class="auto-style8">
                                     <asp:TextBox ID="txtusuario" runat="server" class="form-control" placeholder="🔐 Usuario" Width="233px"></asp:TextBox>
@@ -93,7 +89,7 @@
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td class="auto-style9">&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td class="auto-style10">&nbsp;</td>
                                 <td class="auto-style8">
                                     <asp:TextBox ID="txtcontraseña" runat="server" class="form-control" placeholder="🔐  Contraseña" TextMode="Password" Width="233px"></asp:TextBox>
@@ -101,7 +97,7 @@
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td class="auto-style9">&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td class="auto-style10">&nbsp;</td>
                                 <td class="auto-style8">
                                     <asp:Button ID="Button1" runat="server" class="btn btn-primary" Height="35px" OnClick="Button1_Click" Text="Ingresar" Width="234px" />
@@ -109,14 +105,14 @@
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td class="auto-style9">&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td class="auto-style10">&nbsp;</td>
                                 <td class="auto-style8">
                                     &nbsp;</td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td class="auto-style9">&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td class="auto-style10">&nbsp;</td>
                                 <td class="auto-style8">
                                     &nbsp;</td>
