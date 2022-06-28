@@ -1356,15 +1356,10 @@
       <!-- /.tab-pane -->
     </div>
   </aside>
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
-</div>
-<!-- ./wrapper -->
     <script>
         window.watsonAssistantChatOptions = {
-            integrationID: "8380850e-ef56-4e20-997e-41adb8026d4a", // The ID of this integration.
+            integrationID: "8dc4330e-f0b7-4673-ab6e-25d9b063a6eb", // The ID of this integration.
             region: "au-syd", // The region your integration is hosted in.
             serviceInstanceID: "bb735314-bddc-4532-a489-bd87a9b02aeb", // The ID of your service instance.
             onLoad: function (instance) { instance.render(); }
@@ -1375,9 +1370,8 @@
             document.head.appendChild(t);
         });
     </script>
-
-
-
+</div>
+<!-- ./wrapper -->   
     <!-- Bootstrap core JavaScript-->
     <script src="Content/libs/jquery/jquery.min.js"></script>
     <script src="Content/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

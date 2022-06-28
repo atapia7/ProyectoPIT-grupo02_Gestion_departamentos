@@ -76,6 +76,7 @@
             <asp:ContentPlaceHolder runat="server" ID="MainContent" />
         </section>
     </div>
+        
     <footer>
         <div class="content-wrapper">
             <div class="float-left">
